@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Researcher Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <!-- Placeholder for researcher's photo -->
+                        <img src="/api/placeholder/300/300" alt="Researcher" id="researcher-photo">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="name english fade-in">
+                        <!-- Name in English (to be filled) -->
+                        Researcher Name
+                    </h1>
+                    <h2 class="name bengali fade-in">
+                        <!-- Name in Bengali (to be filled) -->
+                        গবেষকের নাম
+                    </h2>
+                    <div class="social-links fade-in">
+                        <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bio Section -->
+    <section class="bio">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bio-content">
+                <p class="bio-text">
+                    <!-- Bio text to be filled -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.
+                </p>
+            </div>
+            <div class="bio-highlights">
+                <div class="highlight-box">
+                    <i class="fas fa-book"></i>
+                    <h3>Research Focus</h3>
+                    <p>Brief description of research interests and specializations</p>
+                </div>
+                <div class="highlight-box">
+                    <i class="fas fa-university"></i>
+                    <h3>Academic Background</h3>
+                    <p>Brief overview of educational background and positions</p>
+                </div>
+                <div class="highlight-box">
+                    <i class="fas fa-award"></i>
+                    <h3>Achievements</h3>
+                    <p>Notable awards, recognitions, and key accomplishments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Publications Preview -->
+    <section class="publications-preview">
+        <div class="container">
+            <h2 class="section-title">Recent Publications</h2>
+            <div class="publications-grid">
+                <!-- Publication items to be filled -->
+                <div class="publication-item">
+                    <h3 class="publication-title">Publication Title 1</h3>
+                    <p class="publication-authors">Authors list</p>
+                    <p class="publication-journal">Journal Name, Year</p>
+                    <a href="#" class="publication-link">View Publication</a>
+                </div>
+                <div class="publication-item">
+                    <h3 class="publication-title">Publication Title 2</h3>
+                    <p class="publication-authors">Authors list</p>
+                    <p class="publication-journal">Journal Name, Year</p>
+                    <a href="#" class="publication-link">View Publication</a>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="publications.html" class="btn">View All Publications</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; <span id="year"></span> All Rights Reserved</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:email@example.com">email@example.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Researcher Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Publications</h1>
+        </div>
+    </div>
+
+    <!-- Publications Categories -->
+    <section class="publications-categories">
+        <div class="container">
+            <div class="categories-filter">
+                <button class="category-btn active" data-filter="all">All</button>
+                <button class="category-btn" data-filter="journal">Journal Articles</button>
+                <button class="category-btn" data-filter="conference">Conference Papers</button>
+                <button class="category-btn" data-filter="book">Book Chapters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications List -->
+    <section class="publications-list">
+        <div class="container">
+            <div class="year-section">
+                <h2 class="year">2024</h2>
+                <div class="publications-grid">
+                    <!-- Publication items to be filled -->
+                    <div class="publication-item" data-type="journal">
+                        <h3 class="publication-title">Publication Title 1</h3>
+                        <p class="publication-authors">Authors list</p>
+                        <p class="publication-journal">Journal Name, 2024</p>
+                        <p class="publication-abstract">Abstract preview...</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> View</a>
+                            <a href="#" class="publication-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="publication-link"><i class="fas fa-code"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="publication-item" data-type="conference">
+                        <h3 class="publication-title">Publication Title 2</h3>
+                        <p class="publication-authors">Authors list</p>
+                        <p class="publication-journal">Conference Name, 2024</p>
+                        <p class="publication-abstract">Abstract preview...</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> View</a>
+                            <a href="#" class="publication-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="year-section">
+                <h2 class="year">2023</h2>
+                <div class="publications-grid">
+                    <!-- Publication items to be filled -->
+                    <div class="publication-item" data-type="journal">
+                        <h3 class="publication-title">Publication Title 3</h3>
+                        <p class="publication-authors">Authors list</p>
+                        <p class="publication-journal">Journal Name, 2023</p>
+                        <p class="publication-abstract">Abstract preview...</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> View</a>
+                            <a href="#" class="publication-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        </div>
+                    </div>
+                    <div class="publication-item" data-type="book">
+                        <h3 class="publication-title">Book Chapter Title</h3>
+                        <p class="publication-authors">Authors list</p>
+                        <p class="publication-journal">Book Name, Publisher, 2023</p>
+                        <p class="publication-abstract">Chapter abstract preview...</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link"><i class="fas fa-external-link-alt"></i> View</a>
+                            <a href="#" class="publication-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; <span id="year"></span> All Rights Reserved</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:email@example.com">email@example.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="publications.js"></script>
+</body>
+</html>
