@@ -1172,3 +1172,134 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* Publication Detail Page Styles */
+.publication-detail {
+    background-color: var(--background-color);
+    padding: 3rem 0;
+}
+
+.publication-metadata {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.publication-authors {
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.5rem;
+}
+
+.publication-journal {
+    font-size: 1rem;
+    color: var(--text-color-lighter);
+}
+
+.publication-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.journal-badge {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.impact-badge {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.publication-section {
+    margin-bottom: 2.5rem;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.publication-section h2 {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.media-item {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.audio-resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.audio-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--background-color-alt);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.citation-section {
+    text-align: center;
+}
+
+.citation-block {
+    background-color: var(--background-color-alt);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.copy-citation-btn {
+    margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .publication-section {
+        padding: 1.5rem;
+    }
+    
+    .media-grid, 
+    .audio-resources {
+        grid-template-columns: 1fr;
+    }
+}
