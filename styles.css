@@ -1303,3 +1303,92 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Updates for About Me Section */
+/* Add these styles to your styles.css file */
+
+.bio {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.bio-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bio-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.bio-text .intro {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bio-text strong {
+    color: #2c3e50;
+}
+
+.research-interests, .personal-interests {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.research-interests ul, .personal-interests ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.research-interests li, .personal-interests li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.research-interests li:before, .personal-interests li:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+.mentors, .collaboration {
+    padding: 15px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.collaboration {
+    border-bottom: none;
+}
+
+/* Add some animations and hover effects */
+.research-interests, .personal-interests {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-interests:hover, .personal-interests:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .bio-text {
+        font-size: 1rem;
+    }
+    
+    .bio-text .intro {
+        font-size: 1.2rem;
+    }
+    
+    .research-interests, .personal-interests {
+        padding: 15px;
+    }
+}
