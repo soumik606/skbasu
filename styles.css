@@ -228,6 +228,112 @@ section {
 }
 
 /* 
+ * News Section
+ * ------------------------------------------ 
+ */
+ .news {
+    background-color: var(--background-color-alt);
+    padding: 4rem 0;
+}
+
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Styling the scrollbar */
+.news-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-container::-webkit-scrollbar-track {
+    background: var(--background-color-alt);
+}
+
+.news-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color-dark);
+}
+
+.news-item {
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-speed) ease;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.news-item:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.news-content-wrapper {
+    display: flex;
+}
+
+.news-date {
+    flex: 0 0 100px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content p {
+    margin-bottom: 0.25rem;
+}
+
+.news-content .read-more {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+}
+
+.news-content .read-more i {
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+    transition: transform var(--transition-speed) ease;
+}
+
+.news-item:hover .read-more i {
+    transform: translateX(3px);
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .news-content-wrapper {
+        flex-direction: column;
+    }
+    
+    .news-date {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+/* 
  * Hero Section
  * ------------------------------------------ 
  */
@@ -314,6 +420,76 @@ section {
 .social-links a:hover {
     background-color: var(--primary-color-dark);
     transform: translateY(-3px);
+}
+
+/* Mobile Navigation Styles */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1001;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar .container {
+        position: relative;  /* For proper positioning of children */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;  /* Position directly below navbar */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        z-index: 1000;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        visibility: hidden;
+    }
+    
+    .nav-links.active {
+        height: auto;
+        visibility: visible;
+        padding: 10px 0;
+    }
+    
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .nav-links.active li {
+        opacity: 1;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .nav-links li:last-child a {
+        border-bottom: none;
+    }
 }
 
 /* 
